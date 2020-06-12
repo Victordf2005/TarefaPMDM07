@@ -232,8 +232,6 @@ public class Planetas extends Game implements InputProcessor {
 		camPosY = (float) Math.sin(Math.toRadians(lonxitude)) * (float) Math.sin(Math.toRadians(latitude)) * -40;
 		camPosZ = (float) Math.cos(Math.toRadians(lonxitude)) * 40;
 
-		System.out.println(lonxitude + " " + latitude);
-
 		camara3d.position.set(camPosX, camPosY , camPosZ);
 
 		// Sempre diriximos a cámara ao "centro" do universo (Sol)
